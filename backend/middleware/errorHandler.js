@@ -1,4 +1,4 @@
-import { TokenExpiredError } from "jsonwebtoken";
+
 
 const errorHandler = (err, reg, res, next) => {
     let statusCode = err.errstatusCode || 500;
@@ -40,3 +40,7 @@ const errorHandler = (err, reg, res, next) => {
 
     });
 };
+
+// ... your existing code ...
+
+export default errorHandler;  // ADD THIS LINE
